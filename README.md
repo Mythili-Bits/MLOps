@@ -27,6 +27,28 @@ At this point, you should have a working Python environment with all the require
 echo "KERAS_BACKEND=jax" >> .env
 ```
 
+## Data Versioning with DVC
+
+DVC (Data Version Control) tracks dataset versions.
+
+```shell
+Steps:
+
+Initialize DVC: dvc init
+
+Add dataset: dvc add data/dataset.csv
+
+Track dataset versions: git add data.dvc .gitignore
+
+Push dataset to remote storage: dvc push
+
+Revert dataset versions as needed: dvc checkout <version>
+```
+
+✅ Deliverables:
+
+A DVC repository showing different versions of the dataset.
+
 ## Running MLflow
 
 [MLflow](https://mlflow.org/) is a platform-agnostic machine learning lifecycle management tool that will help you track experiments and share and deploy models.
