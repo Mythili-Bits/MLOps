@@ -123,6 +123,26 @@ python3 pipelines/training.py --environment=pypi card server
 
 Open your browser and navigate to [localhost:8324](http://localhost:8324/). Every time you run the Training pipeline, the viewer will automatically update to show the cards related to the latest pipeline execution.
 
+## Hyperparameter Tuning
+
+Hyperparameter tuning is performed using Optuna.
+
+```shell
+Steps:
+
+Install Optuna: pip install optuna
+
+Define an optimization function.
+
+Run trials to find the best model parameters.
+
+Log results in MLflow.
+```
+
+✅ Deliverables:
+
+A report on hyperparameter tuning results.
+
 ## Deploying The Model
 
 To deploy your model locally, you can use the `mflow models serve` command specifying the model version you want to deploy from the Model Registry.
